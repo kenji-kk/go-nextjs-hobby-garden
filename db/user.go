@@ -10,7 +10,7 @@ import (
 
 type User struct {
 	Id        int 		 
-	UserName  string `binding:"required,min=5,max=30"`
+	UserName  string `binding:"required,min=4,max=30"`
 	Password  string `binding:"required,min=6,max=30"`
 	Email     string `binding:"required,min=5,max=100"`
 	CreatedAt time.Time 
